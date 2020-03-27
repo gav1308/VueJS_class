@@ -148,8 +148,9 @@
 </div>
 
 <div id="app">
-  <input type="text" class="form-control" v-model="text">
-  <button class="btn btn-primary mt-1">反轉字串</button>
+  <input type="text" class="form-control" v-model="text" @keyup.enter="reverseText">
+  <a href="#" class="btn btn-primary mt-1" @click.prevent="reverseText">反轉字串</a>
+  <a :href="link" class="btn btn-primary mt-1">連到GOOGLE</a>
   <div class="mt-3">
     {{ newText }}
   </div>
@@ -160,16 +161,59 @@ var app = new Vue({
   el: '#app',
   data: {
     text: '',
-    newText: ''
+    newText: '',
+    link:'https://www.google.com/?hl=zh-tw',
   },
   // 請在此撰寫 JavaScript
   methods: {
     reverseText(event) {
+      // console.log(event);
       this.newText = this.text.split('').reverse().join('');
     }
   }
 });
 </script>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <!-- 解答：
 reverseText(event) {
